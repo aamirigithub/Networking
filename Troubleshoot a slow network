@@ -1,0 +1,20 @@
+# How to troubleshoot a slow network
+# Step 1 - ping the endpoint to check the time delys in response
+ping 192.168.10.10
+
+# Step 2 - run arp -a to the correct entry for gateway 
+arp -a 
+
+# Step 3 - ping any internet site to check delays or patchet lost
+ping www.google.com or ping 8.8.8.8
+
+# Step 4 -  Using 3rd party software ColaSoft Ping Tool to check continuse ping with or ping with -t
+ping -t 192.168.10.10
+
+# Step 5 - using traceroute to check the packet loss
+tracert -d www.google.com
+
+# Step 6 - run the traceroute 2nd time and compare the results
+tracert -a www.google.com
+
+# Concolusion - we will determine if packet taking different paths to get the delays
