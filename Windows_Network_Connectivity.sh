@@ -1,3 +1,26 @@
+{How to troubleshoot connection}
+
+C:> ping < Machine IP Address>
+C:> ping <Gateway IP address>
+
+# Resolve name to IP address & IP address to name
+C:> ping -a <Machine IP address>
+C:> ping -a <Host name>
+
+# Check internal DNS resolving the hostname and IP
+C:> nslookup <IP address>
+C:> nslookup <Host name>
+
+# Check traffic passing through the switch or router 
+C:> tracert <IP address or hostname> 
+First hop - network switch
+Second hop - router
+.....
+Second last hop - switch
+Last hop - the host itself connected to the switch
+
+
+
 { How to troubleshoot a slow network}
 
 # Step 1 - ping the endpoint to check the time delays in response
@@ -6,8 +29,10 @@ C:> ping 192.168.10.10
 # Step 2 - run arp -a to the correct entry for the gateway 
 C:> arp -a 
 
-# Step 3 - ping any internet site to check delays or packet loss
+# Step 3 - ping Google DNS to check the internet is reachable
 C:> ping www.google.com or ping 8.8.8.8
+response
+    Pinging dns.google [8.8.8.8] with 32 bytes of data:
 
 # Step 4 -  Using 3rd party software ColaSoft Ping Tool to check continuous ping with or ping with -t
 ping -t 192.168.10.10
