@@ -1,4 +1,5 @@
 { How to troubleshoot a slow network}
+
 # Step 1 - ping the endpoint to check the time delays in response
 C:> ping 192.168.10.10
 
