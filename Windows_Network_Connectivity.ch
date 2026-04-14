@@ -1,12 +1,12 @@
-# How to troubleshoot a slow network
+{ How to troubleshoot a slow network}
 # Step 1 - ping the endpoint to check the time delays in response
-ping 192.168.10.10
+C:> ping 192.168.10.10
 
 # Step 2 - run arp -a to the correct entry for the gateway 
-arp -a 
+C:> arp -a 
 
 # Step 3 - ping any internet site to check delays or packet loss
-ping www.google.com or ping 8.8.8.8
+C:> ping www.google.com or ping 8.8.8.8
 
 # Step 4 -  Using 3rd party software ColaSoft Ping Tool to check continuous ping with or ping with -t
 ping -t 192.168.10.10
@@ -20,7 +20,7 @@ tracert -a www.google.com
 # Conclusion - we will determine if packets take different paths to get the delays
 
 
-# ** Find VLAN ID in Windows 10 CMD **
+{Find VLAN ID in Windows 10 CMD}
 
 To identify the VLAN ID on a Windows 10 machine, you can use the following methods. These approaches depend on the network configuration and tools available.
 
