@@ -31,6 +31,9 @@ C:> netstat -a
 C:> netstat -an
 C:> netstat -c
 
+# Check the MAC address of NIC
+C:> getmac
+
 { How to troubleshoot a slow network}
 
 # Step 1 - ping the endpoint to check the time delays in response
