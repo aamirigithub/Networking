@@ -19,7 +19,17 @@ Second hop - router
 Second last hop - switch
 Last hop - the host itself connected to the switch
 
+# Check the routing table
+C:> route print
 
+# Check internet accessable network
+C:> ping -a 1.1.1.1
+C:> ping -a 8.8.8.8
+
+# Find open ports of current windows device
+C:> netstat -a
+C:> netstat -an
+C:> netstat -c
 
 { How to troubleshoot a slow network}
 
@@ -46,7 +56,7 @@ tracert -a www.google.com
 # Conclusion - we will determine if packets take different paths to get the delays
 
 
-{Find VLAN ID in Windows 10 CMD}
+{Find vLAN ID in Windows 10 CMD}
 
 To identify the VLAN ID on a Windows 10 machine, you can use the following methods. These approaches depend on the network configuration and tools available.
 
